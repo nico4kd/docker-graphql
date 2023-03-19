@@ -28,8 +28,10 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t nico4kd/docker-graphql:0.0.2 .
+        docker build -t nico4kd/docker-graphql:latest .
     
     - name: Push Docker image
       run: |
         docker push nico4kd/docker-graphql:0.0.2
+        docker push nico4kd/docker-graphql:latest
         
